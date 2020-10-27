@@ -5,7 +5,11 @@
   "projects": {
     "xablau": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "skipTests": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -119,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "xablau"
+    }
+  },
+  "defaultProject": "xablau",
+  "cli": {
+    "analytics": false
+  }
 }

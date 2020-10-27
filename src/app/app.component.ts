@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'xablau';
+  fav = true;
+  valorD20 = 0;
+
+  favoritar(){
+    this.fav = !this.fav;
+  }
+  rodarD20(){
+    this.valorD20 = Math.floor(Math.random()* 20 +1)
+  }
 }
